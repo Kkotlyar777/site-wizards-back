@@ -1,0 +1,106 @@
+.news
+    @include respond(768)
+        margin-top: 50rem
+    @include respond(460)
+        margin-top: 150rem
+    &__background
+        width: 100%
+        height: 90rem
+        position: absolute
+        z-index: -1
+        margin-top: 7rem
+        background: $white-color
+        @include respond(1650)
+            height: 100rem
+        @include respond(1550)
+            height: 107rem
+        @include respond(1350)
+            height: 117rem
+            margin-top: 2rem
+        @include respond(1320)
+            margin-top: -4rem
+        @include respond(1100)
+            margin-top: -8rem
+        @include respond(768)
+            height: 147rem
+    &__title
+        margin-top: 15rem
+        text-align: center
+        color: $black-color
+        font-size: 2.8rem
+        font-style: normal
+        font-weight: 700
+        line-height: 150%
+        text-transform: uppercase
+        margin-bottom: 1rem
+        @include respond(600)
+            margin-top: 57rem
+    &__text-div
+        text-align: center
+    &__border
+        @include title-border
+        margin-bottom: 2.5rem
+    &__text
+        display: flex
+        text-align: center
+        justify-content: center
+        color: $black-color
+        font-size: 1.6rem
+        font-style: normal
+        font-weight: 400
+        line-height: 120%
+        margin-bottom: 5rem
+    &__mainNews
+        position: relative
+    &__main-img
+        box-shadow: 3px 3px 10px 0px rgba(33, 33, 33, 0.15)
+        margin-bottom: 4.5rem
+        transition: .3s all
+        &:hover
+            cursor: pointer
+            filter: blur(5px)
+        @include respond(1350)
+            width: 80%
+    &__mainNews-title
+        font-size: 1.6rem
+        font-style: normal
+        font-weight: 650
+        line-height: 150%
+        margin-bottom: 1.6rem
+        &:hover
+            cursor: pointer
+            color: $blue-color
+    &__mainNews-time
+        font-size: 1.1rem
+        font-style: normal
+        font-weight: 100
+        line-height: 120%
+        margin-bottom: 1.6rem
+        display: block
+    &__mainNews-text
+        font-size: 1.4rem
+        font-style: normal
+        font-weight: 400
+        line-height: 120%
+        text-align: center
+    &__btn-div
+        display: flex
+        justify-content: center
+    &__btn
+        @include main-button
+
+.all-news
+    display: flex
+    flex-direction: row
+    gap: 3rem
+    justify-content: center
+    margin-bottom: 9rem
+    text-align: center
+
+// #thirdSiteTextdiv
+//     @include respond(1320)
+//         display: none
+
+// #secondSiteTextDiv
+//     @include respond(600)
+//         display: none
